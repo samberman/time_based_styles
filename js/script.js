@@ -25,9 +25,17 @@ $(document).ready(function(){
 		arrColor = ["orange", "purple", "yellow", "green"]
 
 		var color = Math.floor((Math.random() * 4));
-		if (min % 5 === 0) { 
-			$("#clock").css("background-color","arrColor[color]")
-		};	
+		if (min % 5 == 0 && sec == 0 && ms<10) { 
+			$("#clock").css("background-color",arrColor[color])
+		};
+
+		arrText = ["orange", "purple", "yellow", "green"]
+
+		var color = Math.floor((Math.random() * 4));
+		if (min == 00 && sec == 0 && ms<10) { 
+			$("#clock").css("background-color",arrText[color])
+		};
+
 		// } else {
 		// 	$("#min").css("color","white")
 		// }
